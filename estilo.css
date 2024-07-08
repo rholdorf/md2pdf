@@ -1,0 +1,122 @@
+/* Define as fontes base para o documento */
+body {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    color: #333333;
+    margin: 20px;
+}
+
+/* Define um container para a primeira página que ocupa toda a altura */
+.first-page {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Alinha o conteúdo na parte inferior */
+}
+
+/* Estiliza os títulos de maneira hierárquica */
+h1, h2, h3, h4, h5, h6 {
+    color: #0056b3;
+    font-weight: normal;
+}
+
+h1 {
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 0.6em;
+    border-bottom: 2px solid #cccccc; /* Linha horizontal abaixo do h1 */
+    padding-bottom: 10px; /* Espaço entre o texto e a linha */
+    page-break-before: always; /* Inicia nova página antes de cada h1 */
+}
+
+h2 {
+    font-size: 20px;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+h3 {
+    font-size: 18px;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+h4 {
+    font-size: 16px;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+h5 {
+    font-size: 14px;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+h6 {
+    font-size: 12px;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+/* Estiliza parágrafos e listas com espaçamento simples */
+p, ul, ol {
+    margin-top: 0;
+    margin-bottom: 1em;
+    line-height: 1.15; /* Espaçamento simples ajustado */
+    font-size: 12px;
+}
+
+li {
+    margin-bottom: 0.5em;
+}
+
+/* Estiliza tabelas com apenas bordas horizontais */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1em;
+    font-size: 12px;
+}
+
+th, td {
+    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #eeeeee;
+}
+
+/* Adiciona um pouco de estilo para links */
+a {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estiliza imagens */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+figcaption {
+    font-size: 12px;
+    color: #666666;
+    text-align: center;
+}
+
+/* Adiciona um rodapé em cada página */
+@page {
+    @bottom-center {
+        content: "Página " counter(page) " de " counter(pages);
+        font-size: 12px;
+        color: #666666;
+    }
+}
+
