@@ -4,7 +4,7 @@ Simple script to help render markdown documents as pdf.
 
 ## How it works
 
-Takes Markdown files, with or without Mermaid syntax, converts to HTML using Pandoc and then converts to PDF using Weasyprint. Works fine on Max, Linux and Windows.
+Takes Markdown files, with or without Mermaid syntax, converts to HTML using Pandoc and then converts to PDF using Weasyprint.
 
 ### Pre-Reqs
 
@@ -20,16 +20,10 @@ Make sure ```Pandoc```, ```Weasyprint``` e ```mermaid-filter``` are properly ins
 
 CD into de directory where your MDs are, and:
 
-### Linux, MacOS
+### Linux, MacOS, WSL
 
 ```bash
 ./md2pdf.sh
-```
-
-### Windows
-
-```powershell
-./render.ps1
 ```
 
 ## Optionally, configure VSCode
